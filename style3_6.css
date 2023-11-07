@@ -1,0 +1,18 @@
+.block {
+	margin: 200px;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 620px;
+	border: 20px solid #868686;
+	background-image: url(1618424289_15-funart_pro-p-oboi-fon-krutoi-fon-15.jpg);
+	padding: 0px, 20px, 20px, 20px;
+}
+.header {
+	text-align: center;
+	color: #7d21b3;
+	font-size: 25px;
+	font-weight: 700px;
+	margin: 20px;
+	font-style: italic;
+}

@@ -32,8 +32,7 @@
 	background: rgb(0, 158, 166);
 	align-items: center;
 	opacity: 0;
-	transition: opacity 0.3s;
 }
-.block1:hover ~ .block2 {
+.row:hover + .block2 {
 	opacity: 1;
 }
