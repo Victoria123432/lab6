@@ -1,5 +1,5 @@
 .block {
-	margin: 200px;
+	margin: 400px;
 	display: flex;
 	flex-direction: column;
 	height: 500px;
@@ -23,14 +23,16 @@
 }
 .text::after {
 	display: block;
+	content: '';
 	font-weight: 700;
 	text-indent: 20px;
 	border-radius: 10px;
 	width: 250px;
 	height: 30px;
-	opacity: 0.6;
+	opacity: 0.8;
 	background-color: #868686;
 	clear: both;
+	margin: 10px 0px 20px 0px;
 }
 .content {
 	display: flex;
@@ -40,4 +42,20 @@
 }
 .right {
 	float: right;
+	margin-left: 100px;
+}
+.aboutme::after {
+	display: block;
+	content: '';
+	font-weight: 700;
+	text-indent: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	width: 600px;
+	height: 46px;
+	opacity: 0.8;
+	background-color: #868686;
+	clear: both;
+	margin: 10px 0px 20px 0px;
+	resize: none;
 }
