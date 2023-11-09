@@ -30,6 +30,7 @@
 	height: 30px;
 	opacity: 0.6;
 	background-color: #868686;
+	clear: both;
 }
 .content {
 	display: flex;
