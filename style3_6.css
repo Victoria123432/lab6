@@ -2,7 +2,7 @@
 	margin: 400px;
 	display: flex;
 	flex-direction: column;
-	height: 500px;
+	height: 600px;
 	width: 620px;
 	border: 20px solid #868686;
 	background-image: url(1618424289_15-funart_pro-p-oboi-fon-krutoi-fon-15.jpg);
@@ -16,14 +16,44 @@
 	margin: 20px;
 	font-style: italic;
 }
+.header::first-letter {
+	font-size: 50px;
+	color: pink;
+}
+.line1::before,
+.line1::after {
+	background-color: #ff0000;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 35%;
+}
+.line1::before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+.line1::after {
+	left: 0.5em;
+	margin-right: -50%;
+}
+
 .text {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #ffffff;
 	font-size: 16px;
 }
+.text1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+}
 .text::after {
+}
+input {
 	display: block;
-	content: '';
 	font-weight: 700;
 	text-indent: 20px;
 	border-radius: 10px;
@@ -31,7 +61,6 @@
 	height: 30px;
 	opacity: 0.8;
 	background-color: #868686;
-	clear: both;
 	margin: 10px 0px 20px 0px;
 }
 .content {
@@ -44,7 +73,7 @@
 	float: right;
 	margin-left: 100px;
 }
-.aboutme::after {
+.aboutme {
 	display: block;
 	content: '';
 	font-weight: 700;
@@ -58,6 +87,9 @@
 	clear: both;
 	margin: 10px 0px 20px 0px;
 	resize: none;
+}
+.aboutme::first-line {
+	color: red;
 }
 .buttons {
 	display: flex;
@@ -85,13 +117,13 @@
 	border: 3px solid #0097a7;
 	color: #0097a7;
 }
-.style1:hover::after {
+.style1:hover {
 	box-shadow: inset 0 -4px 0 #fbff00;
 }
-.style2:hover:after {
+.style2:hover {
 	box-shadow: inset 0 -4px 0 #1eff00;
 }
-.style3:hover:after {
+.style3:hover {
 	box-shadow: 0 0 10px 10px rgba(233, 27, 154, 0.6);
 }
 .reset:hover {
@@ -106,10 +138,10 @@
 	background-color: #0097a7;
 	border-radius: 15px;
 }
-.style1:focus::after {
+.style1:focus {
 	box-shadow: inset 0 -4px 0 #ffa600;
 }
-.style2:focus::after {
+.style2:focus {
 	box-shadow: inset 0 -4px 0 #00ffea;
 }
 .ok:active {
